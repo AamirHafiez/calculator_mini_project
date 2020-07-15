@@ -80,3 +80,19 @@
 	font-size: 3rem;
 	/*display: inline;*/
 }
+
+@media screen and (max-width: 940px){
+	#calculator{
+		width: 35vw;
+	}
+}
+@media screen and (max-width: 740px){
+	#calculator{
+		width: 50vw;
+	}
+}
+@media screen and (max-width: 540px){
+	#calculator{
+		width: 80vw;
+	}
+}
