@@ -21,8 +21,12 @@ for(var i = 0; i < button.length; i++){
 			isOperatorInUse = false;
 		}
 		else if(but === '+/-' && !isInfinity){
-			var dis = parseFloat(calText.textContent);
-			dis = - dis;
+			var dis = calText.textContent;
+			if(dis[0] === '-'){
+				dis = dis.slice(1);
+			}else{
+				dis = '-' + dis;
+			}
 			calText.innerText = dis;
 		}
 		else if (but == '%' && !isInfinity && !isOperatorInUse) {
